@@ -13,14 +13,12 @@
         width: 300px;
         margin: 30px auto 0px auto;
         text-align: center;
-        border-color: black;
-        border-style: solid;
         background-position: center;
         background-size: cover;
     }
 
     .in{
-        width: 600px;
+        width: 750px;
         margin: 30px auto 0px auto;
         text-align: center;
         background-position: center;
@@ -30,8 +28,7 @@
     .t1{
       color: black;
       font-size: 30px;
-      text-align: center;
-      
+      text-align: left;
     }
     .t2{
       text-align: left;
@@ -40,6 +37,22 @@
     .mycard {
         width: 1200px;
         margin: 30px auto 0px auto;
+    }
+    .bor1{
+      text-align: left;
+      height: 50px;
+    }
+    .bor2{
+      text-align: left;
+      height: 75px;
+    }
+    .bor3{
+      text-align: left;
+      height: 105px;
+    }
+    
+    .img1{
+      border-radius: 8px;
     }
 
     @font-face {
@@ -63,36 +76,41 @@
     </div>
 
 <div class= "in">
-    <table>
-      <tr>
-        <td rowspan="4"><img src="4.png" width="350" height="280"></td>
-        <td class="t1">   Team 지하11층</td>
-      </tr>
-      <tr class="t2">
-        <td>팀 소개 : <br>
-            팀 목표 : <br> 
-            팀 약속 : <br></td>
-            </tr>
-      <tr>
-        <td class="t1">Team 좌우명</td>
-      </tr>
-      <tr class="t2"><td>
+  <div class="d-flex" width="1000">
+    <div class="flex-shrink-0">
+      <img src="4.png" width="350" height="280" class="img1">
+    </div>
+    <div class="flex-grow-1 ms-4" >
+      <div class="bor1">
+       <p class="t1"> Team 지하11층 </p>
+      </div>
+      <div class="bor2">
+        팀 소개 : 지하11층<br>
+        팀 목표 : <br> 
+        팀 약속 : <br>
+      </div>
+      <div class="bor1">
+        <p class="t1"> Team 좌우명 </p>
+      </div>
+      <div class="bor3">
         팀장 김재윤 : 이 또한 지나가리라 <br>
         팀원 김진환 : 다같이 잘해봅시당 <br>
         팀원 홍정욱 : 하나를 하더라도 확실하게 <br>
-        팀원 김재한 : 모두 실전에서 활약할 수 있는 개발자가 되기위해서 <br>
-      </td></tr>
-    </table>
+        팀원 김재한 : 모두 개발자가 되기위해서 <br>
+      </div>
+    </div>
+  </div>
+  </div>
+
   </div>
 
   <div class="mycard">
     <div id="card" class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
             <div class="card h-100">
-                <img src="4.png" class="card-img-top" alt="...">
+                <img src="4.png">
                 <div class="card-body">
-                    <h5 class="card-title">이름</h5>
-                    <p class="card-text">MBTI</p>
+                    <h5 class="card-title">김재윤</h5>
                 </div>
                 <div>
                   <button>자기소개</button>
@@ -103,8 +121,7 @@
           <div class="card h-100">
               <img src="4.png" class="card-img-top" alt="...">
               <div class="card-body">
-                  <h5 class="card-title">이름</h5>
-                  <p class="card-text">MBTI</p>
+                  <h5 class="card-title">김진환</h5>
               </div>
               <div>
                 <button>자기소개</button>
@@ -115,8 +132,7 @@
         <div class="card h-100">
             <img src="4.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">이름</h5>
-                <p class="card-text">MBTI</p>
+                <h5 class="card-title">홍정욱</h5>
             </div>
             <div>
               <button>자기소개</button>
@@ -127,8 +143,7 @@
       <div class="card h-100">
           <img src="4.png" class="card-img-top" alt="...">
           <div class="card-body">
-              <h5 class="card-title">이름</h5>
-              <p class="card-text">MBTI</p>
+              <h5 class="card-title">김재한</h5>
           </div>
           <div>
             <button>자기소개</button>
