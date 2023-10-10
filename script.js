@@ -5,7 +5,16 @@ import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.0/fi
 import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 
 // Firebase 구성 정보 설정
-const firebaseConfig = {};
+const firebaseConfig = {
+  //개인 파이어베이스 설정정보
+  apiKey: "AIzaSyA0Ef8eB_yFQ-LoCvToVv-n5lV5QUnXBAI",
+  authDomain: "team-b11.firebaseapp.com",
+  projectId: "team-b11",
+  storageBucket: "team-b11.appspot.com",
+  messagingSenderId: "1009430671259",
+  appId: "1:1009430671259:web:9b53586381b4bdbad2fb3e",
+  measurementId: "G-NWRFDJ8GTC",
+};
 
 // Firebase 인스턴스 초기화
 const app = initializeApp(firebaseConfig);
