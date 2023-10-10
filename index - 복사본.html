@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지하 11층 소개</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    body{
+      background-image: url('https://image.munhwa.com/gen_news/202309/2023091301032227307001_b.jpg');
+      background-size: cover;
+    }
+    .ad{
+        width: 300px;
+        margin: 30px auto 0px auto;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+
+    .in{
+        width: 850px;
+        margin: 30px auto 0px auto;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+
+    .t1{
+      color: white;
+      font-size: 30px;
+      text-align: left;
+    }
+    .t2{
+      text-align: left;
+    }
+    .card{
+      border-color: black;
+    }
+    .mycard {
+        width: 1200px;
+        margin: 30px auto 50px auto;
+    }
+    .bor1{
+      text-align: left;
+      height: 50px;
+    }
+    .bor2{
+      text-align: left;
+      height: 75px;
+    }
+    .bor3{
+      text-align: left;
+      height: 105px;
+    }
+    
+    .img1{
+      border-radius: 8px;
+    }
+
+    @font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  * {
+    font-family: 'yg-jalnan';
+  }
+
+  .modal-content1 {
+    background-color: #4361ee;
+    border-radius: 5px;
+    width: 500px;
+  }
+  .modal-content2 {
+    background-color: black;
+    border-radius: 5px;
+    width: 500px;
+  }
+  .modal-content3 {
+    background-color: purple;
+    border-radius: 5px;
+    width: 500px;
+  }
+  .modal-content4 {
+    background-color: #000066;
+    border-radius: 5px;
+    width: 500px;
+  }
+  .modal {
+    color : white
+  }
+  </style>
+  <body>
+    <div class="ad">
+        <div>
+          <h1>지하 11층 소개 </h1>
+        </div>
+        <div>
+          <h3>Spring B반 11조</h3>
+        </div>
+    </div>
+
+<div class= "in">
+  <div class="d-flex" width="1000">
+    <div class="flex-shrink-0">
+      <img src="b11.png" width="450" height="280" class="img1">
+    </div>
+    <div class="flex-grow-1 ms-4" >
+      <div class="bor1">
+       <p class="t1"> Team 지하11층 </p>
+      </div>
+      <div class="bor2">
+        팀 소개 : 큰 그릇은 늦게 만들어진다. <br>대기만성형 팀 지하 11층 화이팅!
+      </div>
+      <div class="bor1">
+        <p class="t1"> Team 좌우명 </p>
+      </div>
+      <div class="bor3">
+        팀장 김재윤 : 이 또한 지나가리라 <br>
+        팀원 김진환 : 다같이 잘해봅시당 <br>
+        팀원 홍정욱 : 하나를 하더라도 확실하게 <br>
+        팀원 김재한 : 모두 개발자가 되기위해서 <br>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="mycard">
+    <div id="card" class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="p1.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">김재윤</h5>
+                </div>
+                <div>
+                  <!-- 재윤님 소개 모달 열기 버튼 -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    자기소개
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+              <img src="p2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">김진환</h5>
+              </div>
+              <div>
+                <!-- 진환님 소개 모달 열기 버튼 -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  자기소개
+                </button>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+        <div class="card h-100">
+            <img src="p3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">홍정욱</h5>
+            </div>
+            <div>
+              <!-- 정욱님 소개 모달 열기 버튼 -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                자기소개
+              </button>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+      <div class="card h-100">
+          <img src="p4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">김재한</h5>
+          </div>
+          <div>
+            <!-- 재한님 소개 모달 열기 버튼 -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+              자기소개
+            </button>
+        </div>
+    </div>
+  </div>
+  <!-- 재윤님 모달창  -->
+  <div class="modal " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content1">
+        <div class="modal-header">
+          <h5 class="modal-title">김재윤</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          안녕하세요, 저는 만 24살 김재윤 입니다. 졸업예정 대학생이에요. <br />
+          MBTI는 <b>ISTJ</b> 입니다. 완전 기계인간 그 자체,, <br /><br />
+
+          저는 소동물, 고양이, 책, 연극, 보드게임을 좋아해요. <br />
+          좋아하는 색은 파란색계열은 다 좋아합니다! <br /><br />
+
+          좋아하는 음식은 매콤한 한식과 해산물을 대부분 좋아해요. <br />
+          또 호불호가 갈리는 음식은 대부분 호 에요. <br />
+          배라에서 슈팅스타+레인보우샤베트+민트초코 먹는 사람입니다! <br />
+          그리고 하와이안 피자, 솔의 눈, 아침햇살, 등등,, <br /><br />
+
+          그러면 5개월 동안 잘 부탁드려요 :D
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 진환님 모달창  -->
+  <div class="modal " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content2">
+        <div class="modal-header">
+          <h5 class="modal-title">김진환</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          이름 : 김진환 <br>
+          나이 : 97년생(남)<br>
+          위치 : 부산<br>
+          MBTI : INFP?<br>
+          게임, 노래, 영화 좋아함<br>
+          음식 안가림<br>
+          선호하는색? 무채색<br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 정욱님 모달창  -->
+  <div class="modal " id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content3">
+        <div class="modal-header">
+          <h5 class="modal-title">홍정욱</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          안녕하세요~ 저는 97년생 만26살 홍정욱입니다!<br>
+          MBTI는 ESTP인데 P만 확실하고 나머지는 왔다갔다합니다.<br>
+          INFP가 될 때도 있습니다..^^<br><br />
+          
+          제 관심사는 게임, 음악, 영화, 요리에요.<br>
+          사람 만나는것과 사람들 이야기 들어주는걸 좋아해요!<br><br />
+
+          제가 좋아하는 색은 보라색.<br>
+          좋아하는 동물은 강아지, 좋아하는 음악은 발라드<br>
+          영화는 다 좋아하구요, 음식은 장어가 제일 좋습니다!!<br><br />
+
+          컴퓨터로는 게임밖에 안해본 완전 초보이지만 열심히 노력해서 백엔드 개발자로 취직하려고 왔습니다.<br>
+          우리 끝까지 같이 노력해봐요.<br>
+          화이팅~
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- 재한님 모달창  -->
+    <div class="modal " id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content4">
+          <div class="modal-header">
+            <h5 class="modal-title">김재한</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            MBTI : ISFP <br>
+            1995년생 만 28세
+            전직 전산직에서 개발자가 되기 위해서 올해 2월에 퇴사한 취업준비생입니다.<br>
+            백엔드 개발자 지원 중이며 혼자 공부하하는 것 보단 여러명이서 공부하고 싶어
+            이번 내일배움캠프에 도전하게 되었습니다.<br>
+            취미는 산책과 게임이에요<br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
